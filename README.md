@@ -1,2 +1,2 @@
 # instagramzoo
-This project created in steakline: Spring Boot, Angular, JWT, Hibernate, Sping MVC, MySql
+This project created in stekline: Spring Boot, Angular, JWT, Hibernate, Sping MVC, MySql
