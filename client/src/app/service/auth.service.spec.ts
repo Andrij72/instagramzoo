@@ -1,16 +1,31 @@
-import { TestBed } from '@angular/core/testing';
+import { Injectable } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs';
 
-import { AuthService } from './auth.service';
+const AUTH_API = 'http://localhost:8080/api/auth/';
 
-describe('AuthService', () => {
-  let service: AuthService;
+@Injectable({
+  providedIn: 'root'
+})
+export class AuthService {
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(AuthService);
-  });
+  constructor(private http: HttpClient) { }
 
-  it('should be created', () => {
-    expect(service).toBeTruthy();
-  });
-});
+  public login(user): Observable<any> {
+    return this.http.post(AUTH_API + 'signin', {
+      username: user.username,
+      password: user.password
+    });
+  }
+
+  public register(user): Observable<any> {
+    return this.http.post(AUTH_API + 'signup', {
+      email: user.email,
+      username: user.username,
+      firstname: user.firstname,
+      lastname: user.lastname,
+      password: user.password,
+      confirmPassword: user.confirmPassword
+    });
+  }
+}
