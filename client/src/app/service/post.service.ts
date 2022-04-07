@@ -3,7 +3,7 @@ import {HttpClient} from '@angular/common/http';
 import {Post} from '../models/Post';
 import {Observable} from 'rxjs';
 
-const POST_API = 'http://localhost:8080/api/post/';
+const POST_API = 'http://localhost:8099/api/post/';
 
 @Injectable({
   providedIn: 'root'
