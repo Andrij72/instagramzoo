@@ -1,4 +1,4 @@
-# **INSTAGRAMzoo application**
+# **INSTAGRAMzoo full stack application**
 
 created with technologies:
 
