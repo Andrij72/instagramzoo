@@ -8,4 +8,4 @@ created with technologies:
 You can perform CRUD operations on posts.
 This aplication have realised  authorization and registration of users.
 For every user is realised the updated profile  where you can  insert
-a photo and biography. You can like or dislike any post.
+a photo and biography. You can like or dislike any post. Every users have updatable profile.
