@@ -9,3 +9,7 @@ You can perform CRUD operations on posts.
 This aplication have realised  authorization and registration of users.
 For every user is realised the updated profile  where you can  insert
 a photo and biography. You can like or dislike any post. Every users have updatable profile.
+
+Main
+![image](https://user-images.githubusercontent.com/46195941/173350717-d99416a3-9cae-4469-a833-44f0e98f5d25.png)
+
